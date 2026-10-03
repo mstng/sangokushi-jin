@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#202b28">
+  <meta name="description" content="黄巾の乱から三国時代、西晋の統一、東晋滅亡まで。12の時代、人物のつながり、合戦の展開で読み解く三国志の歴史。史実と演義を分けて、初めてでも分かりやすく。">
+  <title>三国志年代記 — 三国から、晋へ。</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="/assets/river-battle.webp" fetchpriority="high">
+  <link rel="stylesheet" href="/src/style.css">
+  <script type="module" src="/src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <a class="brand" href="#story"><span class="brand-seal" aria-hidden="true">史</span><span>三国志<span class="brand-small">年代記</span></span></a>
+    <nav class="main-nav" aria-label="メインナビゲーション">
+      <a href="#story" data-view-link="story" aria-current="page">歴史をたどる</a>
+      <a href="#people" data-view-link="people">人物録</a>
+      <a href="#battles" data-view-link="battles">合戦録</a>
+    </nav>
+    <a class="header-source" href="#sources">史料と読み方 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="story-view" class="view" aria-label="歴史をたどる">
+      <div class="hero">
+        <img src="/assets/river-battle.webp" alt="長江の船団を描いた創作の水墨画風イラスト" width="2048" height="683" fetchpriority="high">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">後漢末・三国・西晋・東晋</p>
+          <h1>三国から、<span>晋へ。</span></h1>
+          <p class="hero-copy">英雄たちの時代は、どう始まり、どこへ続いたのか。<br class="desktop-break">人物と合戦でたどる、十二章の中国史。</p>
+        </div>
+        <div class="hero-period" aria-label="184年から420年"><span>西暦</span><strong>184</strong><span class="period-line"></span><strong>420</strong></div>
+        <span class="art-note">情景は創作イラスト</span>
+      </div>
+      <section class="chronicle section-wrap" aria-labelledby="chronicle-heading">
+        <div class="section-heading"><div><span class="section-index">THE CHRONICLE</span><h2 id="chronicle-heading">時代をたどる</h2></div><p class="quiet">年を選んで、その時代へ</p></div>
+        <div class="era-scale" aria-hidden="true"><span>後漢末・群雄割拠</span><span>三国時代</span><span>西晋</span><span>東晋</span></div>
+        <nav id="timeline" class="timeline" aria-label="12章の年表"></nav>
+        <p class="timeline-help">章ごとの見出し年を表示しています。間隔は実際の年数に比例しません。</p>
+        <div id="chapter-content" class="chapter-content" aria-live="polite" aria-atomic="false"></div>
+      </section>
+      <section class="dynasty-section section-wrap" aria-labelledby="dynasty-heading">
+        <div class="section-heading"><div><span class="section-index">THE BIG PICTURE</span><h2 id="dynasty-heading">王朝のつながりを、ひと目で。</h2></div></div>
+        <div class="dynasty-chart" role="img" aria-label="後漢が220年に終わり、魏・蜀漢・呉が並立。263年に魏が蜀を滅ぼし、265年に晋が魏から交代、280年に呉を滅ぼして統一。西晋は316年に滅亡し、東晋が317年から420年まで続き、宋へ交代。北方は十六国などの諸政権に分立。">
+          <div class="dynasty-origin"><span class="dynasty-pill neutral">後漢<small>25–220</small></span></div>
+          <div class="dynasty-branches"><div><span class="dynasty-pill wei">魏<small>220–265</small></span><span class="dynasty-arrow">晋に交代 ↘</span></div><div><span class="dynasty-pill shu">蜀漢<small>221–263</small></span><span class="dynasty-arrow">魏が征服 →</span></div><div><span class="dynasty-pill wu">呉<small>222 / 229–280</small></span><span class="dynasty-arrow">晋が征服 ↗</span></div></div>
+          <div class="dynasty-middle"><span class="dynasty-pill jin">西晋<small>265–316</small></span><span class="unify-note">280年 三国統一</span></div>
+          <div class="dynasty-end"><span class="dynasty-pill other">北方の諸政権<small>十六国・北魏など</small></span><div class="south-line"><span class="dynasty-pill jin">東晋<small>317–420</small></span><span class="end-arrow">→</span><span class="dynasty-pill song">宋<small>420–479</small></span></div></div>
+        </div>
+        <p class="small-note">国号の「蜀漢」は当時「漢」。呉は222年の独立を起点とする場合と、229年の皇帝即位を起点とする場合があります。晋の建国年の表記は「史料と読み方」を参照。</p>
+      </section>
+    </section>
+    <section id="people-view" class="view section-wrap catalogue" hidden aria-labelledby="people-heading"><div class="catalogue-intro"><span class="section-index">PEOPLE OF THE AGE</span><h1 id="people-heading">時代を動かした、<br>人々。</h1><p>武将、軍師、皇帝、そして文化人。<br>名前を選ぶと、その人の役割とつながりが見えてきます。</p></div><div id="people-catalogue"></div></section>
+    <section id="battles-view" class="view section-wrap catalogue" hidden aria-labelledby="battles-heading"><div class="catalogue-intro"><span class="section-index">BATTLES & TURNING POINTS</span><h1 id="battles-heading">一戦が、<br>天下を変える。</h1><p>勝敗だけでなく、戦う理由と、その後の変化まで。<br>合戦を選んで、戦いの展開をたどれます。</p></div><div id="battle-catalogue" class="battle-catalogue"></div></section>
+    <section id="sources-view" class="view section-wrap catalogue" hidden aria-labelledby="sources-heading"><div class="catalogue-intro"><span class="section-index">READING THIS CHRONICLE</span><h1 id="sources-heading">史料と、読み方。</h1><p>歴史を知る面白さを、物語の魅力とともに。</p></div><div id="sources-content"></div></section>
+    <noscript><p class="noscript-note">年表や人物の詳細を表示するには、ブラウザーのJavaScriptを有効にしてください。このサイトは184年の黄巾の乱から420年の東晋滅亡までを扱います。</p></noscript>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="#story">三国志年代記</a><p>三国の終わりは、歴史の終わりではない。</p><a href="#sources">史料と読み方 <span aria-hidden="true">↗</span></a></footer>
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span id="dialog-kind" class="section-index"></span><button class="icon-button dialog-close" type="button" aria-label="詳細を閉じる">×</button></div><div id="dialog-content"></div></dialog>
+</body>
+</html>
